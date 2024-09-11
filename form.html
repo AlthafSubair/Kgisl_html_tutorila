@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            color: green;
+        }
+        #container{
+
+        }
+        #para{
+            background-color: rgb(20, 20, 20);
+            font-size: 50px;
+            color: white;
+            text-transform: uppercase;
+            text-wrap: pretty;
+            text-align: justify;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;  color: crimson; font-weight: bold; font-size: 30px;">Form demo</h2>
+    <div id="container">
+    <form action="/submit_form" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Jane" required><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Doe" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" placeholder="**************" required />
+        <br>
+        <br>
+        <button type="submit" style="padding: 10px; color: chartreuse; background-color: black; border-radius: 5px;">submit</button>
+        </form></div>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aspernatur animi alias vel amet et facilis, quaerat sapiente consectetur quibusdam suscipit placeat culpa minima magni iste expedita ipsam fugit odio obcaecati accusantium cum exercitationem libero assumenda ex. Obcaecati quas laudantium recusandae fugiat. Culpa beatae corrupti autem, corporis laboriosam ratione minima dolorem porro cum sint accusamus saepe laudantium aut, blanditiis ipsam natus consequatur consequuntur ab quos ad repudiandae. Quod incidunt, temporibus obcaecati eveniet minus, fuga facere quis voluptatem nemo quasi, omnis nostrum veritatis delectus assumenda error veniam ad repellat. Repellat quisquam aspernatur illum expedita incidunt, alias voluptate obcaecati cumque neque voluptas?</p>
+</body>
+</html>

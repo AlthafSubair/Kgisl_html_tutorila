@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: chartreuse;
+    font-size: 18px;
+}
+
