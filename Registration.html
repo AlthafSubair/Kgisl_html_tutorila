@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        #heading {
+            text-align: center;
+            padding: 20px 0;
+            color: #333;
+        }
+        .container {
+            width: 50%;
+            background-color: #fff;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        form {
+            margin: auto;
+            width: 80%;
+        }
+        input, select, textarea {
+            display: block;
+            width: 100%;
+            height: 35px;
+            border-radius: 7px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        label {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .radio-group, .checkbox-group {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .radio-group input, .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .radio-group label, .checkbox-group label {
+            font-size: 16px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+        input[type="submit"] {
+            background-color: #014d0e;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            width: 20%;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        input[type="reset"] {
+            background-color: #8e0505;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            width: 20%;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        input[type="submit"]:hover {
+            background-color: #00b31e;
+        }
+        input[type="reset"]:hover {
+            background-color: #e72121;
+        }
+        .btn-group{
+            display: flex;
+            gap: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 id="heading">Registration Form</h1>
+    <div class="container">
+        <form action="https://httpbin.org/get" method="get" target="_blank">
+            <div class="input-control">
+                <label for="fname">Full Name:</label>
+                <input type="text" name="fname" id="fname" required placeholder="John Doe">
+            </div>   
+          
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="john@gmail.com">
+          
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" minlength="6" required placeholder="*******">
+          
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="18" max="100" required>
+          
+            <label for="url">Website</label>
+            <input type="url" name="url" id="url" required placeholder="https://example.com">
+          
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+          
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="tel" id="tel" required placeholder="Enter your number">
+          
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+          
+            <label>Languages Known</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="language" value="english"> English</label>
+                <label><input type="checkbox" name="language" value="malayalam"> Malayalam</label>
+                <label><input type="checkbox" name="language" value="hindi"> Hindi</label>
+            </div>
+          
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="">--Select--</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="brazil">Brazil</option>
+            </select>
+          
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" rows="4" placeholder="Tell us something about yourself"></textarea>
+          <div class="btn-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset"/>
+          </div>
+            
+        </form>
+    </div>
+</body>
+</html>
