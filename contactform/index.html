@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+           width: 60%;
+           
+        }
+        .img-container {
+            flex: 1;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .form-container {
+            flex: 1;
+            padding: 40px;
+        }
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-control {
+            margin-bottom: 20px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-control input,
+        .form-control textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+        .form-control input:focus,
+        .form-control textarea:focus {
+            border-color: #0066ff;
+            outline: none;
+            background-color: #fff;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0066ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+          
+        }
+        button:hover {
+            background-color: #0052cc;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+      
+        <div class="img-container">
+            <img src="../project/public/barren_hill.jpg" alt="Scenic view">
+        </div>
+        <div class="form-container">
+            <h1 class="heading">Contact Us</h1>
+            <form action="">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-control">
+                    <label for="msg">Message</label>
+                    <textarea rows="4" id="msg" name="msg" placeholder="Write your message"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

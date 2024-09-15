@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 3rem;
+            color: #4a4a8c;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #5656a1;
+        }
+
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+            padding: 1rem;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        audio, video {
+            margin-top: 1rem;
+        }
+     audio::-webkit-media-controls-panel{
+
+        background-color: red;
+     }
+        .caption { 
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Media Element</h1>
+    
+    <div class="media-container">
+        <h2>Audio Player</h2>
+        <audio controls autoplay loop>
+            <source src="./assets/Epic Background Music - Progress ( No Copyright Music ).mp3" type="audio/mpeg">
+        </audio>
+        <div class="caption">Listen to our latest audio!</div>
+    </div>
+
+    <div class="media-container">
+        <h2>Video Player</h2>
+        <video controls width="600" height="600">
+            <source src="/assets/ewasteaudio.mp4" type="video/mp4"/>
+        </video>
+        <div class="caption">Watch our featured video!</div>
+    </div>
+
+    <div class="media-container">
+        <h2>Video Player</h2>
+        <video controls autoplay loop width="600" height="600">
+            <source src="/assets/ewsate_001.MP4" type="video/mp4"/>
+        </video>
+        <div class="caption">This video loops and plays automatically.</div>
+    </div>
+</body>
+</html>
