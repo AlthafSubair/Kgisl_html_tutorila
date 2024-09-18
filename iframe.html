@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 30px;
+            color: #333;
+        }
+        h2{
+            margin: 20px 0;
+        }
+        .iframe-container .object-container {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        iframe object{
+            width: 600px;
+            height: 400px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 5px rgb(0,0,0,0.1);
+        }
+        .map-container{
+            height: 450px;
+        }
+        .pdf-container iframe {
+            height: 500px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #3498db;
+            font-size: 18px;
+            margin-top: 10px;
+display: block;
+        }
+        .object-container object{
+height: 500px;
+        }
+
+    </style>
+</head>
+<body>
+ <div class="iframe-container">
+    <div>
+        <h1>Embedded External Webpage</h1>
+        <iframe src="https://samplelib.com/" name="frame1" title="pexels" frameborder="0" width="900" height="500"></iframe>
+        <a href="https://samplelib.com/" target="frame1">open for sample audios</a>
+        <a href="https://www.pexels.com/" target="frame1">open for sample vedio</a>
+    </div>
+ </div>
+
+
+ <div class="iframe-container">
+    <div>
+        <h1>Embedded internal Webpage</h1>
+        <iframe src="wiki.html" title="HTML DOCUMENT" aria-label="HTML DOCUMENT" frameborder="0" width="900" height="500"></iframe>
+
+    </div>
+ </div>
+
+ 
+ <div class="iframe-container pdf-container">
+    <div>
+        <h1>Embedded PDF</h1>
+        <iframe src="./assets/studenetundertaking.pdf" title="HTML DOCUMENT" aria-label="HTML DOCUMENT" frameborder="0" width="900" height="500"></iframe>
+
+    </div>
+ </div>
+ <div class="iframe-container map-container">
+    <div>
+        <h1>Embedded Google Map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650847.3785673643!2d73.2178506!3d20.593684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bf6a8d89db5e2b9%3A0xfdb6e09b4cdbab7d!2sIndia!5e0!3m2!1sen!2sin!4v1694760115270!5m2!1sen!2sin" title="HTML DOCUMENT" aria-label="HTML DOCUMENT" frameborder="0" width="500" height="400"></iframe>
+
+    </div>
+ </div>
+ <div class="iframe-container">
+    <div>
+        <h1>Embedded Image</h1>
+        <iframe src="./assets/new.jpg" title="HTML DOCUMENT" aria-label="HTML DOCUMENT" frameborder="0" width="400" height="500"></iframe>
+
+    </div>
+ </div>
+
+ <div class="iframe-container object-container ">
+    <div>
+        <h1>Embedded object</h1>
+        <object data="./assets/new.jpg" type="image/jpg">
+            <p>something went wrong</p> <a href="list.html">change</a>
+        </object>
+
+    </div>
+ </div>
+
+
+</body>
+</html>

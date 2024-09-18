@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      h2 {
+        margin: 10px;
+      }
+      .nav {
+        background-color: blueviolet;
+        padding: 10px;
+        margin-top: 1rem;
+        color: white;
+      }
+      .navbar-flex {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .navbar-grid {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        gap: 5rem;
+      }
+      .navbar-inline-block {
+        display: inline-block;
+        width: 100%;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar-block {
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .navbar-inline .navbar-item {
+        display: inline;
+        padding-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Navbar: FlexBox</h2>
+    <nav class="nav navbar-flex">
+      <div class="navbar-item">Home</div>
+      <div class="navbar-item">About</div>
+      <div class="navbar-item">Contact</div>
+    </nav>
+
+    <h2>Navbar: Grid</h2>
+    <nav class="nav navbar-grid">
+      <div class="navbar-item">Home</div>
+      <div class="navbar-item">About</div>
+      <div class="navbar-item">Contact</div>
+    </nav>
+
+    <h2>Navbar: Block and Inline-Block</h2>
+    <nav class="nav navbar-inline-block">
+      <a href="#" class="navbar-block">Home</a>
+      <a href="#" class="navbar-block">About</a>
+      <a href="#" class="navbar-block">Contact</a>
+    </nav>
+
+    <h2>Navbar: Inline</h2>
+    <nav class="nav navbar-inline">
+      <a href="#" class="navbar-item">Home</a>
+      <a href="#" class="navbar-item">About</a>
+      <a href="#" class="navbar-item">Contact</a>
+    </nav>
+  </body>
+</html>

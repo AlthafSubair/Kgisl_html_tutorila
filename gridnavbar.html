@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            height: 100vh;
+        }
+        h2 {
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        .nav {
+            background-color: #333;
+            color: white;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            padding: 10px;
+            height: 100vh;
+        }
+        .nav-items {
+            display: grid;
+            gap: 10px; 
+            align-items: center;
+        }
+        .nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 4px;
+        }
+        .nav a:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <h2>Navbar: Sidebar with Grid</h2>
+        <div class="nav-items">
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+        </div>
+    </nav>
+
+   
+
+</body>
+</html>
