@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .header, .footer{
+            text-align: center;
+            background-color: #333;
+            color:#fff;
+            padding: 15px;
+        }
+        .column{
+            float: left;
+            padding: 15px;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .menu{
+            width: 20%;
+        }
+        .content{
+            width: 70%;
+        }
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li{
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: red;
+            color: white;
+        }
+        .menu li:hover{
+            background-color: rgb(206, 44, 44);
+        }
+        .content h1{
+            color: #333;
+        }
+        .content p{
+            color: #666;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Travel Guide</h1>
+    </div>
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <li>Destination</li>
+          <li>Hotels</li>
+          <li>Restaurant</li>
+          <li>Travel Tips</li>
+        </ul>
+      </div>
+      <div class="column content">
+        <h1>Destinations</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quidem
+          nihil fugit minus, fugiat laudantium, totam dolore, velit officia.
+         
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+          veritatis numquam inventore.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+        <small>&copy; 2024 Travel Guide. All rights reserved.</small>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+            box-shadow:  0 4px 10px rgba(155, 160, 154, 0.5);
+            margin-top: 20px;
+        }
+        .container{
+            margin-top: 30px;
+            border: 1px solid #333;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .container img{
+            float: right;
+            margin-right: 10px;
+            width: 150px;
+        }
+        .container p{
+            margin: 0;
+        }
+        .clear-fix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>FLOATING</h1>
+    <div class="container">
+      <img src="./assets/golam.jpg" alt="" srcset="" />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+        laboriosam harum. Eos nesciunt, assumenda vero soluta aspernatur
+        molestias ipsam a vel nulla. Maxime, aliquid nam. Beatae blanditiis
+        ducimus, nostrum saepe laudantium, tenetur debitis reiciendis fugiat
+        iusto aut similique, consectetur enim? Dolore mollitia beatae
+        reprehenderit rerum. Omnis adipisci tempora maxime qui.
+      </p>
+    </div>
+
+    <div class="container overflow-hidden">
+        <img src="./assets/golam.jpg" alt="" srcset="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+          laboriosam harum. Eos nesciunt, assumenda vero soluta aspernatur
+          molestias ipsam a vel nulla. Maxime, aliquid nam. Beatae blanditiis
+          ducimus, nostrum saepe laudantium, tenetur debitis reiciendis fugiat
+          iusto aut similique, consectetur enim? Dolore mollitia beatae
+          reprehenderit rerum. Omnis adipisci tempora maxime qui.
+        </p>
+      </div>
+
+      <div class="container clear-fix">
+        <img src="./assets/golam.jpg" alt="" srcset="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+          laboriosam harum. Eos nesciunt, assumenda vero soluta aspernatur
+          molestias ipsam a vel nulla. Maxime, aliquid nam. Beatae blanditiis
+          ducimus, nostrum saepe laudantium, tenetur debitis reiciendis fugiat
+          iusto aut similique, consectetur enim? Dolore mollitia beatae
+          reprehenderit rerum. Omnis adipisci tempora maxime qui.
+        </p>
+      </div>
+  </body>
+</html>

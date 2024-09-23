@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "sidebar-main main sidebar-right"
+        "footer footer footer"
+        ;
+        gap: 15px;
+        padding: 20px;
+        background-color: #f4f4f9;
+       }
+       .header{
+        grid-area: header;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+       }
+       .nav{
+        grid-area: nav;
+        background-color: #555;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+       }
+       .side-main{
+grid-area: sidebar-main;
+background-color: #121211;
+color: #fff;
+padding: 20px;
+       }
+       .main{
+        grid-area: main;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+       }
+       .side-right{
+          grid-area: sidebar-right;
+          background-color: #add8e6;
+          padding: 20px;  
+        }
+        .footer{
+            grid-area: footer;
+            text-align: center;
+            padding: 20px;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .blog-image{
+            width:100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        h1, h2, h3{
+            margin-top: 0;
+        }
+        p{
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .header p{
+            text-align: center;
+        }
+        .footer p{
+            text-align: center;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+      
+        a{
+            text-decoration: none;
+            color: aquamarine;
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h1>Awesome Blog</h1>
+        <p>Sharing some thoughts</p>
+      </header>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <aside class="side-main">
+        <h1>Popular Posts</h1>
+        <ul>
+          <li><a href="#">Start a new blog</a></li>
+          <li><a href="#">How new stories begins</a></li>
+          <li><a href="#">Adding new chapters</a></li>
+        </ul>
+      </aside>
+      <main class="main">
+        <h2>Exploring the beautey of nature</h2>
+        <img
+          src="./project/public/sunset.jpg"
+          alt="nature"
+          class="blog-image"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          iure itaque minus officia consectetur, cupiditate quidem reiciendis.
+          Earum aliquam laborum voluptatem placeat cum dolorum ratione quia,
+          excepturi ullam tenetur corporis at enim consequatur, illo dolorem
+          similique et? Illum quam animi, accusamus aliquid mollitia aut maxime
+          fugiat culpa, tempore nihil eligendi sed qui optio amet minus
+          perferendis corrupti dolor praesentium autem porro. Consequuntur enim
+          sed esse iure distinctio, suscipit illo molestiae praesentium
+          obcaecati quibusdam corrupti? Similique, explicabo ducimus nam harum
+          fugit iure nisi, vitae blanditiis saepe ullam ex sunt architecto ad
+          voluptatem neque? Eligendi odit cupiditate provident vero suscipit
+          praesentium. Libero!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum
+          autem quia, quam dicta nobis in. Eaque corrupti sint deleniti minima
+          aspernatur dolore, quia porro, perspiciatis cumque aliquam eos? Ea
+          impedit voluptatem incidunt praesentium ipsum quibusdam labore
+          voluptate excepturi id, amet eaque, maiores blanditiis porro.
+          Consectetur exercitationem similique temporibus ratione, ipsa tenetur
+          distinctio reiciendis magni recusandae! Culpa facilis sint
+          consequuntur labore voluptatibus ut optio beatae quam excepturi
+          exercitationem porro, perspiciatis dignissimos quaerat nam ducimus
+          nisi assumenda voluptates voluptatem. Voluptatum sapiente, fuga minus
+          dolore debitis amet laborum facilis culpa iusto voluptatem consequatur
+          dolor nulla alias explicabo exercitationem in ratione libero? Culpa.
+        </p>
+        <h3>Why Nature Matters</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          nulla illo unde saepe, nam non alias id illum veritatis laborum
+          molestias modi voluptates voluptate vitae impedit quod voluptatem
+          labore corporis ab similique ipsam officiis dignissimos deserunt.
+          Dolor totam accusamus eligendi neque, similique impedit accusantium
+          iure pariatur repudiandae! Sequi enim eligendi sit deserunt nihil
+          quidem assumenda dolorum placeat corrupti! Sequi repellendus
+          laboriosam tempora dignissimos labore, maxime vero voluptatem, qui
+          optio, sint non fuga blanditiis odit aperiam unde omnis tempore harum.
+          A tenetur ducimus sequi sed explicabo obcaecati earum facilis sint
+          illo. Reiciendis similique facilis voluptate consequuntur porro, natus
+          praesentium recusandae odio!
+        </p>
+        <img
+          src="./project/public/teaplant.jpg"
+          alt="nature"
+          class="blog-image"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          dicta error non sapiente dolor mollitia cupiditate temporibus earum!
+          Porro natus dolor iure illo? Ipsa tempora corporis culpa incidunt
+          perferendis commodi corrupti autem? Consequuntur ea laudantium itaque
+          odit iure officia praesentium, voluptatem similique, inventore iusto
+          dolorum nulla expedita provident accusantium earum tenetur quisquam,
+          esse mollitia minus. Modi voluptatum, accusamus officiis earum nisi
+          quidem, beatae debitis enim aperiam qui aliquam voluptas at suscipit
+          cupiditate? Et tempora praesentium perferendis deleniti, asperiores
+          molestiae perspiciatis possimus dolor eligendi sed rerum placeat eos
+          quasi nihil soluta dolorem laboriosam vitae. Corrupti, voluptatum
+          laudantium est atque rem voluptates.
+        </p>
+      </main>
+      <aside class="side-right">
+        <h3>About the Author</h3>
+        <img src="./assets/avatar.jpg" alt="" class="blog-image" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, vel
+          aliquam. Magni corporis aliquam est inventore voluptas possimus!
+          Impedit nisi totam sed laudantium in quidem perspiciatis laboriosam
+          porro, error omnis!
+        </p>
+      </aside>
+      <footer class="footer">
+        <p>&copy; 2024 My Awesome Bog | All rights reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>

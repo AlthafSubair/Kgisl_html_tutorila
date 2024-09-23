@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        nav{
+            text-align: center;
+            background-color: #333;
+            color:#fff;
+            padding: 15px;
+            background-image: url('./assets/banneer-nav.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .log{
+            float: left;
+            align-items: center;
+            font-weight: bolder;
+            color: coral;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .menu{
+            display: flex;
+         align-items: center;
+         justify-content: end;
+        }
+        .menu ul{
+            display: flex;
+           list-style: none;
+        }
+        .menu li{
+            margin-right: 1rem;
+        }
+       
+        
+       
+ 
+    </style>
+</head>
+<body>
+    <nav class="clearfix">
+        <div class="log">
+            <img src="./assets/Redmi_1S-Logo.wine.png" alt="">
+        </div>
+      
+     <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+     </div>
+    </nav>
+</body>
+</html>
