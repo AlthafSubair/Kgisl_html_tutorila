@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+        }
+
+        h1{
+            color: #333;
+            text-align: center;
+        }
+        h1::before{
+            content: " NOTE:";
+            color: gold;
+        }
+        h1::after{
+            content: " ENDED:";
+            color: gold;
+        }
+        ::selection{
+            background-color: gold;
+            color: #333;
+        }
+        p{
+            padding: 1rem;
+            background-color: rgb(49, 71, 90);
+            color: #fff;
+            border-left-color: 2px solid white;
+        }
+        p::first-letter{
+        font-weight: bold;
+        color: red;
+        }
+        p::first-line{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Welcome to Pseduo elemants</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quas quisquam dignissimos natus nemo aliquam corporis quae nulla doloribus quasi.</p>
+</body>
+</html>

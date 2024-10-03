@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgb(0,0,0, 0.1);
+            width: 400px;
+        }
+        h2{
+            text-align: center;
+        }
+        input,textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: aqua;
+        }
+        input:not([type="text"]),
+        textarea{
+            background-color: #f9f9f9;
+        }
+        input:focus,
+        textarea:focus{
+border-color: #007bff;
+outline: none;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:disabled{
+            background-color: #cccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <div class="form-container">
+       
+        <form action="">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Enter your Message" required></textarea>
+            <button>Send Meaasge</button>
+        </form>
+    </div>
+</body>
+</html>

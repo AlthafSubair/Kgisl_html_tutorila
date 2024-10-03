@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            margin: 20px 0;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+        .static{
+            background-color: blueviolet;
+        }
+        .relative{
+            position: relative;
+            left: -20px;
+            background-color: gold;
+            top: 10px;
+        }
+        .absolute{
+            position: absolute;
+            top: 20px;
+            left: 250px;
+            background-color: green;
+        }
+        .fixed{
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: red;
+        }
+        .sticky{
+            position: sticky;
+            top:0;
+            width: 200px;
+            margin:20px 0;
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box static">Static Box</div>
+        <div class="box relative">Relative Box</div>
+        <div class="box absolute">Absolute Box</div>
+        <div class="box fixed">Fixed Box</div>
+
+        <div style="height: 1000px;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nam amet labore animi facilis ipsum quae vel praesentium harum beatae! Officia quis, dolorem temporibus neque ipsam autem perferendis obcaecati ad vero eum dolores excepturi natus debitis odit non error reiciendis rem quam illo ab incidunt nulla esse sit labore. Dolorem tempora itaque natus, molestias tempore officia a nulla autem alias, amet maxime aliquam iusto id laudantium, eum soluta maiores. Cumque corrupti tempore quisquam non, praesentium aut minima eveniet nulla accusantium maxime deserunt totam obcaecati exercitationem harum asperiores dolores. Modi voluptatibus ex non beatae minus consequuntur ad minima est voluptas voluptate.
+            <div class="box sticky">Sticky Box</div>
+        </div>
+    </div>
+</body>
+</html>

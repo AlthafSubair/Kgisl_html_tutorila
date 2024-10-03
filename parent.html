@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child, .parent{
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .parent .child:first-child{
+            background-color: lawngreen;
+        }
+        .parent .child:nth-child(2){
+            background-color: lightblue;
+        }
+        .parent .child:nth-child(even){
+            background-color: lightcoral;
+        }
+        .parent .child:last-child{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">First Child</div>
+        <div class="child">Second Child</div>
+        <div class="child">Third Child</div>
+        <div class="child">Fourth Child</div>
+        <div class="child">Fifth Child</div>
+    </div>
+</body>
+</html>

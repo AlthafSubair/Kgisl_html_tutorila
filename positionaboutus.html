@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header, .footer {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            position: relative;
+            padding: 20px;
+            background-color: #ffff;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            width: 80%;
+            height: 500px;
+        }
+        .about {
+            margin-bottom: 30px;
+            background-color: #e8f8f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .about-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .relative {
+            position: relative;
+            top: 10px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .absloute {
+            position: absolute;
+            top: 10px;
+            margin-bottom: 10px;
+            background-color: #313363;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+        }
+        .contact-image {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">fic</header>
+    <main class="container">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi saepe alias tempora praesentium, veniam nobis culpa soluta eius dolores excepturi.</p>
+            <img src="./assets/cr7.jpg" alt="" srcset="" class="about-image">
+        </section>
+
+        <!-- Moved .absloute section here -->
+        <section class="absloute">
+            <img src="./assets/banneer-nav.jpg" alt="" class="contact-image">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo quisquam natus temporibus voluptatem facilis voluptatum reiciendis quas doloribus maxime?</p>
+        </section>
+        
+        <section class="relative">Meet Our Team</section>
+    </main>
+    <footer class="footer">&copy; 2024 fic Company. All rights reserved</footer>
+</body>
+</html>

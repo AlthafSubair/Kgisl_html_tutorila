@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: #333;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+        }
+        button{
+            width: 6rem;
+            height: 2rem;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            margin: 1rem;
+            transition: background-color 1s, ease, width 1s ease-in-out;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+        .btn{
+            background-color: green;
+            border: 1px solid green;
+        }
+        .btn:hover{
+            background-color: white;
+            color: green;
+            width: 8rem;
+        }
+        .btn-delay{
+           background-color: red;
+           border: 1px solid red;
+           transition-delay: 0.5s;
+        }
+        .btn-delay:hover{
+            background-color: white;
+            color: red;
+            width: 8rem;
+            
+        }
+        .btn-click{
+            background-color: blue;
+            border: 2px solid rgb(0, 255, 119);
+            transition: width 1s cubic-bezier(0,1.95,1,-1.1);
+        }
+        .btn-click:active{
+        width: 8rem;
+        background-color: white;
+        color: blue;
+        
+        }
+        
+    </style>
+</head>
+<body>
+   <h1>Transition Example</h1> 
+  <div class="btns">
+    <button class="btn">button</button>
+    <button class="btn-delay">transition</button>
+    <button class="btn-click">Example</button>
+  </div>
+</body>
+</html>
