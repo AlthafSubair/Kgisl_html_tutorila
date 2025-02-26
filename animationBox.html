@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            animation-name: Animate;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes Animate{
+            0% {
+                transform: translateX(0) rotate(0deg);
+                
+                background-color: blueviolet;
+                
+            }
+            50%{
+                transform: translateX(200px) rotate(180deg);
+               
+                background-color: violet;
+                
+            }
+            100%{
+                transform: translateX(0) rotate(360deg);
+                
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
